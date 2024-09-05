@@ -176,7 +176,7 @@ a {
     font-size: 1.5rem;
 }
 .page {
-    
+    background-color: #FFF;
 }
 .page-1 {
     background: radial-gradient(118% 116.18% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
@@ -364,4 +364,25 @@ a {
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .page {
+    max-width: 720px;
+  }
+  .nav {
+    max-width: 720px;
+  }
+  #darkmodetext {
+    display: block;
+  }
+}
+
+@media (min-width: 1400px) {
+  .page {
+    max-width: 1320px;
+  }
+  .nav {
+    max-width: 1320px;
+  }
 }
