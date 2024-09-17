@@ -65,6 +65,7 @@ a {
 }
 
 .featuresnav {
+  font-weight: 600;
   display: none;
 }
 
@@ -164,7 +165,7 @@ a {
 }
 
 #auth-signin {
-  display: none;  
+  /* display: none;   */
 }
 
 .drop-down {
@@ -376,6 +377,10 @@ a {
   #darkmodetext {
     display: block;
   }
+  .drop-down {
+    display: none;
+  }
+  
 }
 
 @media (min-width: 1400px) {
@@ -384,5 +389,8 @@ a {
   }
   .nav {
     max-width: 1320px;
+  }
+  .featuresnav {
+    display: block;
   }
 }
