@@ -76,6 +76,7 @@ a {
 .featuresnav {
   font-weight: 600;
   display: none;
+  color: var(--clr-grey800);
 }
 
 .featureslink:hover {
@@ -156,6 +157,11 @@ a {
   .slider.round:before {
     border-radius: 50%;
   }
+}
+
+#darkmodetext {
+  color: var(--clr-grey700);
+  font-weight: 600;
 }
 
 .btn-signin {
@@ -386,7 +392,8 @@ a {
     max-width: 720px;
   }
   .nav {
-    max-width: 720px;
+    min-width: 720px;
+    max-width: 100%;
   }
   #darkmodetext {
     display: block;
@@ -405,11 +412,10 @@ a {
   .page {
     max-width: 1320px;
   }
-  .nav {
-    min-width: 100%;
-  }
   .navbar {
-    padding: 0 10%;
+    width: 1320px;
+    margin: 0 auto;
+    gap: 2.5rem;
   }
   .featuresnav {
     display: block;
