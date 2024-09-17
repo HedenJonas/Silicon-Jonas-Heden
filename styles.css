@@ -26,10 +26,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
-main {
-  /* margin-left: auto;
-  margin-right: auto; */
+.BG {
+  background: radial-gradient(118% 116.18% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+  width: 100%;
+}
+.BG2 {
+  background-color: #F3F6FF;
+  width: 100%;
 }
 
 a {
@@ -52,7 +58,7 @@ a {
     right: 0;
     background-color: #fff;
     z-index: 1;
-    
+    width: 100%;
 }
 .navbar {
     
@@ -60,6 +66,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content:space-between;
+    width: 100%;
     
 }
 .silicon {
@@ -180,17 +187,13 @@ a {
     cursor: pointer;
     font-size: 1.5rem;
 }
-.page {
-    background-color: #FFF;
-}
-.färg {
-  background: radial-gradient(118% 116.18% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
-  width: 100%;
-}
+
 .page-1 {
     /* background: radial-gradient(118% 116.18% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%); */
     padding-top: 1.63rem;
-    
+    background-color: transparent;
+    width: 100%;
+    margin: 0 auto;
     .h1{
         text-align: center;
         margin-left: 2.81rem;
@@ -284,6 +287,7 @@ a {
     }
 
     .featuresall {
+      width: 100%;
       display: flex;
       flex-direction: column;
       text-align: start;
@@ -307,8 +311,9 @@ a {
     }
 }
 .page-3 {
-    background-color: #F3F6FF;
+    
     text-align: center;
+    width: 100%;
 
     .h2features {
       padding-top: 4rem;
@@ -400,11 +405,11 @@ a {
   .page {
     max-width: 1320px;
   }
-  .färg {
-    max-width: 100%;
-  }
   .nav {
-    max-width: 1320px;
+    min-width: 100%;
+  }
+  .navbar {
+    padding: 0 10%;
   }
   .featuresnav {
     display: block;
