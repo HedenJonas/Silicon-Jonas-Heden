@@ -50,6 +50,34 @@ a {
   justify-content: center;
 }
 
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pilner {       
+  margin-right: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 1.375rem;
+  border: 1px solid #fff;
+  background-color: #fff;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all .25s;
+}
+.pilner:hover {
+  background-color: var(--clr-Primary);
+}
+.pilner:active {
+  background-color: var(--clr-Primary);
+}
+
 .nav {
     margin-top: 0.44rem;
     position: sticky;
@@ -243,7 +271,7 @@ a {
         margin: 1rem auto 1.88rem auto;
         display: flex;
         
-        .pilner {
+        /* .pilner {
         
           margin-right: 1.4rem;
           display: flex;
@@ -257,19 +285,19 @@ a {
           flex-shrink: 0;
           cursor: pointer;
           transition: all .25s;
-        }
+        } */
         .text2 {
           min-width: fit-content;
           display: flex;
           justify-content: center;
           align-items: center;
         }
-        .pilner:hover {
+        /* .pilner:hover {
           background-color: var(--clr-Primary);
         }
         .pilner:active {
           background-color: var(--clr-Primary);
-        }
+        } */
     }
     
 }
@@ -375,8 +403,66 @@ a {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.8rem;
+    color: #585C7B;
   }
 
+  .pilner {       
+    margin-right: 0;
+    margin-left: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 1.375rem;
+    border: 1px solid #fff;
+    background-color: var(--clr-Primary);
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: all .25s;
+    box-shadow: 0px -8px 18px -8px var(--clr-Primary);
+  }
+  .pilner:hover {
+    background-color: var(--clr-grey200);
+    box-shadow: none;
+  }
+  .pilner:active {
+    background-color: var(--clr-grey200);
+    box-shadow: none;
+  }
+
+  .faqborder {
+    border: 1px solid var(--clr-grey300);
+    margin: 0 .75rem;
+    border-radius: .5rem .5rem 0 0;
+  }
+  
+  .faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+  .h2faq {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.3rem;
+    color: #131022;
+  }
+  #faq2 {
+    border: 1px solid var(--clr-grey300);
+    margin: 0 .75rem;
+    border-radius: 0;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.87rem;
+  }
+  
+  .faqtext {
+    color: #585C7B;
+  }
 
 }
 .footer {
