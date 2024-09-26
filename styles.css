@@ -36,6 +36,8 @@ body {
 .BG2 {
   background-color: #F3F6FF;
   width: 100%;
+  display: grid;
+  place-items: center;
 }
 
 a {
@@ -423,12 +425,18 @@ a {
       line-height: 2.26rem;
     }
 
+    #desktop3mobiler {
+      display: none;
+    }
+    #tablet3mobiler {
+      display: none;
+    }
+
     .imagemobile {
       position: relative;
       top: 0;
       left: 0;
-      padding: .9rem 1.66rem 1rem 1rem;
-      
+      padding: .9rem 1.66rem 1rem 1rem; 
     }
     .background
        {
@@ -445,7 +453,15 @@ a {
         margin: 0 .9rem;
       }
     }
-
+    #sida3-h3-1 {
+      display: none;
+    }
+    #sida3-h3-3 {
+      display: none;
+    }
+    #sida3-article-2 {
+      display: none;
+    }
     .textpage3 {
       margin: 0 .95rem 3.5rem .95rem;
       font-size: 1rem;
@@ -701,6 +717,45 @@ a {
 
   /* Sida 3 */
 
+  .BG2 #desktop3mobiler {
+    display: none;
+  }
+  .imagemobile {
+      display: none;
+  }
+
+  .BG2 #tablet3mobiler {
+    display: block;
+  }
+  
+  .BG2 #tablet3mobiler-ID1 {
+    position: absolute;
+  }
+
+  .BG2 .h3container {
+    width: 26rem;
+    margin: 0;
+    .h3features {
+      padding: 1rem 0 0 0;
+      font-size: 1.42rem;
+      font-weight: 800;
+      line-height: 1.98rem;
+      margin: 0;
+    }
+  }
+  .BG2 .textpage3 {
+    width: 28rem;
+    margin: 1rem .95rem 3.5rem .95rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--clr-grey700);
+  }
+
+  .BG2 #sida3-h3-1 {
+    display: inline-block;
+  }
+  
   /* Sida 4 */
 
   /* Sida 5 */
@@ -788,33 +843,44 @@ a {
     }
 }
 
-/* .page-2 {
-    text-align: center;
-    .image-page2 {
-      display: none;
-    }
-
-
-    .featuresall {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      text-align: start;
-      padding: 2rem .75rem .75rem .75rem;
-      
-
-      .features {
-        display: flex;
-      }
-
-      .text {
-        padding-left: 1.5rem;
-      }
-
-    }
-} */
-
   /* Sida 3 */
+  .BG2 .h2features {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3.25rem;
+  }
+
+  .BG2 .h3container .h3features {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2.1rem;
+  }
+  .BG2 #tablet3mobiler {
+    display: none;
+  }
+  .BG2 #desktop3mobiler {
+    display: flex;
+    gap: 7rem;
+  }
+  
+  .BG2 #sida3-h3-1 {
+    display: none;
+  }
+  .BG2 #sida3-h3-2 {
+    display: none;
+  }
+  .BG2 #sida3-h3-3 {
+    display: block;
+  }
+  .BG2 #sida3-article-1 {
+    display: none;
+  }
+  .BG2 #sida3-article-2 {
+    display: block;
+  }
+  .BG2 .textpage3 {
+    width: 40rem;
+  }
 
   /* Sida 4 */
 
