@@ -165,15 +165,16 @@
         </section>
     </div>
     <section class="page page-4 flex4">
-        <h2 class="h2features">Any questions? Check out the FAQs</h2>
+        <h2 class="h2features">Any questions? <br id="br-faq">Check out the FAQs</h2>
         <article class="textpage4">
             Still have unanswered questions and need to get in touch?
         </article>
-        <div>
+        <div class="flex">
             <div>
                 <div id="faq1" class="faqborder faq">
                     <h2 class="h2faq">Is any of my personal information stored in the App?</h2>
-                    <button class="pilner"><img src="images/pilupp.svg" alt=""></button>
+                    <button id="mobile-btn1" class="pilner"><img src="images/pilupp.svg" alt=""></button>
+                    <button id="tablet-btn1" class="pilner2"><img src="images/Iconpil ner.svg" alt=""></button>
                 </div>
                 <div id="faq2" class="faqborder faq">
                     <article class="faqtext">
@@ -195,7 +196,11 @@
                 <h2 class="h2faq">
                     Can I schedule future transfers?
                 </h2>
-                <button class="pilner2"><img src="images/Iconpil ner.svg" alt=""></button>
+                <button id="tablet-btn2" class="pilner2"><img src="images/Iconpil ner.svg" alt=""></button>
+                <button id="tablet-btn3" class="pilner"><img src="images/pilupp.svg" alt=""></button>
+                <div id="tablet-text1">
+                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
+                </div>
             </div>
             <div id="faq5" class="faqborder faq">
                 <h2 class="h2faq">
@@ -217,7 +222,21 @@
             </div>
         </div>
         <div class="contact">
-            <button class="btn-primary">Contact us now</button>
+            <div id="contact-btn">
+                <button class="btn-primary">Contact us now</button>
+            </div>
+            <div id="contact-info">
+                <div id="contact-phone">
+                    <img src="images/phone.svg" alt="Telefon">
+                    <article id="contact-info-text">Still have questions?</article>
+                    <button class="btn-phone btn-contact">Contact us <i class="fa-regular fa-arrow-right" style="color: #6366f1;"></i></button>
+                </div>
+                <div id="contact-message">
+                    <img src="images/message.svg" alt="meddelande">
+                    <article id="contact-info-text">Don't like phone calls?</article>
+                    <button class="btn-message btn-contact"><span>Contact us <i class="fa-regular fa-arrow-right" style="color: #22c55e;"></i></span></button>
+                </div>
+            </div>
             <div class="newsletter">
                 <div class="flexrow klockan">
                     <img src="images/notification-icon-1.svg" alt="">
@@ -233,7 +252,7 @@
         </div>
     </section>
     <footer class="footer flex5">
-        <p>© 2024 Silicon. All rights reserved. </p>
+        <p>© 2024 Silicon. All rights reserved.</p>
         <p>Credit MadrasThemes</p>
     </footer>
     

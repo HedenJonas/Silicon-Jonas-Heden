@@ -10,9 +10,12 @@
     --clr-grey700: #565973;
     --clr-grey800: #33354D;
     --clr-grey900: #0B0F19;
-    --clr-Primary: #6366F1;
+    --clr-Primary: #6366f1;
     --clr-Gradiant: linear-gradient(90deg, #6366F1 0%, #8B5CF6 50%, #D946EF 100%);
-
+    --clr-error: #EF4444;
+    --clr-success: #22c55e;
+    --clr-warning: #FFBA08;
+    --clr-info: #4C82F7;
 }
 
 * {
@@ -44,9 +47,14 @@ a {
   color: var(--clr-grey900);
   text-decoration: none;
 }
+
 /* #endregion */
     
 /* #region Diverse flex */
+.flex {
+  display: flex;
+  flex-direction: column;
+}
 .flex1 {
   display: flex;
   flex-direction: column;
@@ -329,34 +337,12 @@ a {
     .discover {
         margin: 1rem auto 1.88rem auto;
         display: flex;
-        
-        /* .pilner {
-        
-          margin-right: 1.4rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 2.75rem;
-          height: 2.75rem;
-          border-radius: 1.375rem;
-          border: 1px solid #fff;
-          background-color: #fff;
-          flex-shrink: 0;
-          cursor: pointer;
-          transition: all .25s;
-        } */
         .text2 {
           min-width: fit-content;
           display: flex;
           justify-content: center;
           align-items: center;
         }
-        /* .pilner:hover {
-          background-color: var(--clr-Primary);
-        }
-        .pilner:active {
-          background-color: var(--clr-Primary);
-        } */
     }
     
 }
@@ -479,6 +465,9 @@ a {
 .page-4 {
   text-align: center;
 
+  #br-faq {
+    display: none;
+  }
   .h2features {
     font-size: 1.53rem;
     font-weight: 800;
@@ -534,6 +523,14 @@ a {
     box-shadow: none;
   }
 
+  #tablet-btn1 {
+    display: none;
+  }
+
+  #tablet-btn3 {
+    display: none;
+  }
+
   .faqborder {
     border: 1px solid var(--clr-grey300);
     margin: 0 .75rem;
@@ -574,8 +571,60 @@ a {
     color: #585C7B;
   }
 
+  #tablet-text1 {
+    display: none;
+  }
+
   .contact {
     margin-top: 3.65rem;
+    width: 100%;
+  }
+
+  #contact-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 1.5rem;
+    display: none;
+  }
+  #contact-phone {
+    border: 1px solid var(--clr-grey200);
+    border-radius: .5rem;
+    padding: 1.5rem;
+  }
+  #contact-message {
+    border: 1px solid var(--clr-grey200);
+    border-radius: .5rem;
+    padding: 1.5rem;
+  }
+  #contact-info-text {
+    margin: 1.05rem 0 .7rem 0;
+  }
+  .btn-contact {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    padding: .7rem 0;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+  }
+  .btn-phone {
+    color: var(--clr-Primary);
+  }
+  .btn-phone:hover {
+    border: 1px solid var(--clr-Primary);
+  }
+  .btn-message {
+    color: var(--clr-success);
+  }
+  .btn-message:hover {
+    border: 1px solid var(--clr-success);
   }
 
   .newsletter {
@@ -593,16 +642,16 @@ a {
   }
 
   .sign-up-form {
-    display: flex;
+    display: inline-flex;
     margin-top: 2rem;
   }
 
   .form-input {
-    padding: 0.625rem 0.625rem 0.625rem 2.5rem; /* Equivalent to 10px 10px 10px 40px */
+    padding: 0.625rem 0.625rem 0.625rem 2.5rem; 
     background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 512 512%27%3E%3Cpath d=%27M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z%27/%3E%3C/svg%3E');
     background-repeat: no-repeat;
-    background-position: 0.625rem center; /* Equivalent to 10px */
-    background-size: 1.25rem 1.25rem; /* Equivalent to 20px 20px */
+    background-position: 0.625rem center; 
+    background-size: 1.25rem 1.25rem; 
     width: 100%;
     border: 0.0625rem solid var(--clr-grey400);
     border-right: 0;
@@ -624,6 +673,7 @@ a {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.6rem;
+    border-radius: 0 .5rem .5rem 0;
   }
 }
 .footer {
@@ -766,11 +816,108 @@ a {
   }
   /* #endregion */
   
-  /* Sida 4 */
+  /* #region Sida 4 */
+  .page-4 {
+    width: 100%;
+  }
+  .page-4 #br-faq {
+    display: block;
+  }
+  .page-4 .h2features {
+    width: 26rem;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.6rem;
+  }
+  .page-4 .textpage4 {
+    width: 26rem;
+  }
+  .page-4 .faqborder {
+    border: 0;
+    border-radius: .5rem;
+    box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  }
+  .flex {
+    width: 100%;
+    gap: 1rem;
+  }
+  .page-4 {
+    #mobile-btn1 {
+      display: none;
+    }
+    #tablet-btn1 {
+      display: block;
+    }
+    #tablet-btn2 {
+      display: none;
+    }
+    #tablet-btn3 {
+      display: block;
+    }
+    
+    .pilner {       
+      box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.90);
+      border: 1px solid var(--clr-Primary);
+    }
+    .pilner:hover {
+      background-color: var(--clr-grey200);
+      box-shadow: none;
+      border: 0;
+    }
+    .pilner:active {
+      background-color: var(--clr-grey200);
+      box-shadow: none;
+      border: 0;
+    }
+    .pilner2:hover {
+      background-color: var(--clr-Primary);
+      box-shadow: none;
+    }
+    .pilner2:active {
+      background-color: var(--clr-Primary);
+      box-shadow: none;
+    }
+  }
+  .page-4 #faq2 {
+    display: none;
+  }
+  .page-4 #faq4 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .page-4 #tablet-text1 {
+    display: block;
+  }
+  .page-4 #contact-btn {
+    display: none;
+  }
+  .page-4 #contact-info {
+    display: grid;
+  }
+
+  .page-4 .newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 4rem .8rem 4rem .8rem;
+  }
+
+  .page-4 .sign-up-form {
+    margin: auto 0;
+  }
+/* #endregion */
 
   /* Sida 5 */
 
   /* Sida 6 */
+
+/* #region footer */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: .1rem;
+  }
+  /* #endregion */
 
 }
 
