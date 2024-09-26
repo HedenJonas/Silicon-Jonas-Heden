@@ -1,5 +1,5 @@
 
-
+/* #region Utility */
 :root {
     --clr-grey100: #F3F6FF;
     --clr-grey200: #EFF2FC;
@@ -44,7 +44,9 @@ a {
   color: var(--clr-grey900);
   text-decoration: none;
 }
+/* #endregion */
     
+/* #region Diverse flex */
 .flex1 {
   display: flex;
   flex-direction: column;
@@ -94,7 +96,9 @@ a {
   align-items: center;
   justify-content: center;
 }
+/* #endregion */
 
+/* #region topbar */
 .pilner {       
   margin-right: 1.4rem;
   display: flex;
@@ -270,6 +274,7 @@ a {
     cursor: pointer;
     font-size: 1.5rem;
 }
+/* #endregion */
 
 .page-1 {
     /* background: radial-gradient(118% 116.18% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%); */
@@ -355,7 +360,7 @@ a {
     }
     
 }
-/* logorna */
+/* #region logorna */
 .logos{
   margin-top: 6rem;
   display: none;
@@ -366,6 +371,7 @@ a {
   border-radius: .5rem;
   padding: 0 auto;
 }
+/* #endregion */
 
 .page-2 {
     text-align: center;
@@ -634,7 +640,7 @@ a {
     max-width: 720px;
   }
 
-  /* Sida 1 */
+  /* #region Sida 1 */
 
   .page-1 {
     .image1 {
@@ -666,8 +672,9 @@ a {
     align-items: center;
     justify-content: center;
   }
+  /* #endregion */
 
-  /* topbar */
+  /* #region topbar */
 
   .nav {
     min-width: 720px;
@@ -683,8 +690,9 @@ a {
     display: block;
     margin-bottom: .2rem;
   }
+  /* #endregion */
   
-  /* logo raden */
+  /* #region logo raden */
 
   .logos {
     width: 720px;
@@ -705,8 +713,9 @@ a {
   #logo6 {
     display: none;
   }
+  /* #endregion */
 
-  /* Sida 2 */
+  /* #region Sida 2 */
 
   .page-2 {
     .featuresall {
@@ -714,9 +723,9 @@ a {
       grid-template-columns: 1fr 1fr;
     }
 }
+/* #endregion */
 
-  /* Sida 3 */
-
+  /* #region sida3 */
   .BG2 #desktop3mobiler {
     display: none;
   }
@@ -755,6 +764,7 @@ a {
   .BG2 #sida3-h3-1 {
     display: inline-block;
   }
+  /* #endregion */
   
   /* Sida 4 */
 
@@ -769,8 +779,7 @@ a {
     max-width: 1320px;
   }
 
-  /* topbar */
-
+  /* #region topbar*/
   .navbar {
     width: 1320px;
     margin: 0 auto;
@@ -785,13 +794,13 @@ a {
   .drop-down {
     display: none;
   }
+  /* #endregion */
 
-  /* sida1 */
+  /* #region sida 1*/
 
+  /* #endregion */
 
-
-  /* logo raden */
-
+  /* #region logo raden*/
   .logos {
     width: 1320px;
   }
@@ -804,9 +813,9 @@ a {
   #logo6 {
     display: flex;
   }
+  /* #endregion */
 
-  /* Sida 2 */
-
+  /* #region sida 2*/
   .page-2 {
     .desktop-page2 {
       display: grid;
@@ -842,8 +851,9 @@ a {
       margin-bottom: 4.2rem;
     }
 }
+/* #endregion */
 
-  /* Sida 3 */
+  /* #region sida 3*/
   .BG2 .h2features {
     font-size: 2.5rem;
     font-weight: 800;
@@ -881,6 +891,7 @@ a {
   .BG2 .textpage3 {
     width: 40rem;
   }
+/* #endregion */
 
   /* Sida 4 */
 
