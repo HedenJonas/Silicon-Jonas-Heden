@@ -367,7 +367,9 @@ a {
 
 .page-2 {
     text-align: center;
-    
+    .image-page2 {
+      display: none;
+    }
     .h2features {
       padding-top: 2.3rem;
       padding-bottom: 1.5rem;
@@ -615,6 +617,9 @@ a {
   .page {
     max-width: 720px;
   }
+
+  /* Sida 1 */
+
   .page-1 {
     .image1 {
 
@@ -645,6 +650,9 @@ a {
     align-items: center;
     justify-content: center;
   }
+
+  /* topbar */
+
   .nav {
     min-width: 720px;
     max-width: 100%;
@@ -660,6 +668,8 @@ a {
     margin-bottom: .2rem;
   }
   
+  /* logo raden */
+
   .logos {
     width: 720px;
     display: flex;
@@ -679,12 +689,33 @@ a {
   #logo6 {
     display: none;
   }
+
+  /* Sida 2 */
+
+  .page-2 {
+    .featuresall {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+  /* Sida 3 */
+
+  /* Sida 4 */
+
+  /* Sida 5 */
+
+  /* Sida 6 */
+
 }
 
 @media (min-width: 1400px) {
   .page {
     max-width: 1320px;
   }
+
+  /* topbar */
+
   .navbar {
     width: 1320px;
     margin: 0 auto;
@@ -702,6 +733,10 @@ a {
 
   /* sida1 */
 
+
+
+  /* logo raden */
+
   .logos {
     width: 1320px;
   }
@@ -714,5 +749,77 @@ a {
   #logo6 {
     display: flex;
   }
+
+  /* Sida 2 */
+
+  .page-2 {
+    .desktop-page2 {
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      margin: 7rem 0;
+    }
+    .image-page2 {
+      display: block;
+      text-align: left;
+    }
+    .featuresall {
+      padding: 0;
+      row-gap: 3.3rem;
+    }
+    .h2features {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 3.25rem;
+      padding-top: 0;
+      text-align: start;
+    }
+    .h3features {
+      font-size: 1.25rem;
+      font-weight: 800;
+      line-height: 1.75rem;
+    }
+    .textfeatures {
+      margin-bottom: auto;
+    }
+    .textpage2 {
+      text-align: start;
+      padding: 0;
+      margin-bottom: 4.2rem;
+    }
+}
+
+/* .page-2 {
+    text-align: center;
+    .image-page2 {
+      display: none;
+    }
+
+
+    .featuresall {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      padding: 2rem .75rem .75rem .75rem;
+      
+
+      .features {
+        display: flex;
+      }
+
+      .text {
+        padding-left: 1.5rem;
+      }
+
+    }
+} */
+
+  /* Sida 3 */
+
+  /* Sida 4 */
+
+  /* Sida 5 */
+  
+  /* Sida 6 */
 
 }
