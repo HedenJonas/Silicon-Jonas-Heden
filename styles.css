@@ -1172,6 +1172,56 @@ a {
 /* #endregion */
 
   /* #region Sida 4 */
+  .flex4 {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    grid-template-columns: repeat(12, 1fr);
+    .h2features {
+      grid-column: 1/6;
+      grid-row: 1/2;
+      margin: 0;
+      text-align: left;
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 130%;
+    }
+    .textpage4 {
+      grid-column: 1/5;
+      grid-row: 2/3; 
+      width: 26rem;
+      margin: 0;
+      margin-top: 2rem;
+      text-align: left;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 160%;
+    }
+    .flex {
+      grid-column: 6/13;
+      grid-row: 1/9;
+      width: 100%;
+    }
+    .contact {
+      margin-top: 0;
+      padding: 0;
+      grid-column: 1/13;
+      grid-row: 1/10;
+      display: grid;
+      grid-template-rows: repeat(6, 1fr) repeat(3, auto);;
+      grid-template-columns: repeat(12, 1fr);
+      .newsletter {
+        grid-column: 1/13;
+        grid-row: 7/10;
+        margin-top: 7rem;
+      }
+      #contact-info {
+        grid-column: 1/5;
+        grid-row: 3/5;
+      }
+    }
+  }
 
   .page-4 .h2-newsletter {
     font-size: 1.5rem;
