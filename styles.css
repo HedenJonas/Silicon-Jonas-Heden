@@ -458,6 +458,9 @@ a {
       color: var(--clr-grey700);
     }
 }
+.desktop {
+  display: none;
+}
 .page-4 {
   text-align: center;
 
@@ -1171,6 +1174,16 @@ a {
   }
 /* #endregion */
 
+  /* #region features-page */
+  .desktop {
+    display: block;
+  }
+  /* #endregion */
+
+  /* #region testimonials */
+
+  /* #endregion */
+
   /* #region Sida 4 */
   .flex4 {
     margin-top: 7rem;
@@ -1219,6 +1232,7 @@ a {
       #contact-info {
         grid-column: 1/5;
         grid-row: 3/5;
+        width: 102%;
       }
     }
   }
@@ -1245,9 +1259,4 @@ a {
   }
 
   /* #endregion */
-
-  /* Sida 5 */
-  
-  /* Sida 6 */
-
 }
