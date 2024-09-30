@@ -1296,6 +1296,7 @@ ul {
       width: 100%;
     }
     .contact {
+      width: 101%;
       margin-top: 0;
       padding: 0;
       grid-column: 1/13;
