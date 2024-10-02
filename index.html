@@ -6,7 +6,7 @@
     <title>Silicon - Manage your money</title>
     <meta name="description" content="We offer you a new generation of the mobile banking.
     Save, spend & manage money in your pocket.">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +15,16 @@
 
 </head>
 <body>
-    <nav class="nav">
+    <nav aria-label="main-navigation" class="nav">
         <div class="navbar">
-            <a href="index.html" class="silicon"><img src="images/silicontext.svg" alt="silicon logo"></a>
-            <nav class="featuresnav">
+            <a href="index.html" class="silicon"><img src="images/favicon.svg" alt="silicon logotype."><span>Silicon</span></a>
+            <div class="featuresnav">
                 <a class="featureslink" href="features.html">Features</a>
-            </nav>
+            </div>
             <div class="toggle">
                 <span id="darkmodetext" class="togglelabel">Dark mode</span>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="darkmode-switch">
                     <span class="slider round"></span>
                 </label>
             </div>
@@ -43,16 +43,16 @@
                 </h1>
                 <div class="flex1-1">
                     <div id="item1-1" class="image1">
-                        <img class="image1-1" src="images/mobiler.svg" alt="Silicon - Manage your money. Visas på två mobiler">
+                        <img class="image1-1" src="images/mobiler.svg" alt="Silicon - Manage your money. Visas på två mobiler.">
                     </div>
                     <div id="item1-2" class="flex1-2">
                         <p id="item1-2-1" class="text1">
                             We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.
                         </p>
-                        <button class="app" id="apple"><a class="fit" href="https://www.apple.com/se/app-store/" target="_blank"><img src="images/appstore-light.svg.svg" alt=""></a></button>
-                        <button class="app" id="google"><a class="fit" href="https://play.google.com/store/games?device=windows" target="_blank"><img src="images/googleplay-light.svg.svg" alt=""></a></button>
+                        <button class="app" id="apple"><a class="fit" href="https://www.apple.com/se/app-store/" target="_blank"><img src="images/appstore-light.svg.svg" alt="Länk till appstore."></a></button>
+                        <button class="app" id="google"><a class="fit" href="https://play.google.com/store/games?device=windows" target="_blank"><img src="images/googleplay-light.svg.svg" alt="Länk till Google play."></a></button>
                         <div id="item1-2-2" class="discover">
-                            <button class="pilner"><img src="images/Iconpil ner.svg" alt=""></button>
+                            <button class="pilner"><img src="images/Iconpil ner.svg" alt="Pil ner."></button>
                             <p class="text2">Discover more</p>
                         </div>
                     </div>
@@ -60,16 +60,16 @@
             </section>
         </header>
         <section class="logos">
-            <div id="logo1" class="logo"><img src="images/logo-LOGO.svg" alt=""></div>
-            <div id="logo2" class="logo"><img src="images/logo-logoipsum.svg" alt=""></div>
-            <div id="logo3" class="logo"><img src="images/logo-logoipsum2.svg" alt=""></div>
-            <div id="logo4" class="logo"><img src="images/logo-logoipsum3.svg" alt=""></div>
-            <div id="logo5" class="logo"><img src="images/logo-logoipsum4.svg" alt=""></div>
-            <div id="logo6" class="logo"><img src="images/logo-logoipsum5.svg" alt=""></div>
+            <div id="logo1" class="logo"><img src="images/logo-LOGO.svg" alt="Logotype 1"></div>
+            <div id="logo2" class="logo"><img src="images/logo-logoipsum.svg" alt="Logotype 2"></div>
+            <div id="logo3" class="logo"><img src="images/logo-logoipsum2.svg" alt="Logotype 3"></div>
+            <div id="logo4" class="logo"><img src="images/logo-logoipsum3.svg" alt="Logotype 4"></div>
+            <div id="logo5" class="logo"><img src="images/logo-logoipsum4.svg" alt="Logotype 5"></div>
+            <div id="logo6" class="logo"><img src="images/logo-logoipsum5.svg" alt="Logotype 6"></div>
         </section>
         <section class="page page-2 flex2">
             <div class="desktop-page2">
-                <div class="image-page2" id="image-page2-ID"><img src="images/mobil+kort.svg" alt=""></div>
+                <div class="image-page2" id="image-page2-ID"><img src="images/mobil+kort.svg" alt="Mobil ock betalkort."></div>
                 <div>
                     <h2 class="h2features" id="h2features-ID">App Features</h2>
                     <article class="textpage2" id="textpage2-ID">
@@ -77,8 +77,8 @@
                     </article>
                     <div class="featuresall" id="featuresall-ID">
                         <div class="features info1">
-                            <div class="icon1">
-                                <img src="images/linkeasypayments.svg" alt="easy payments">
+                            <div class="icon1 icon">
+                                <img class="icon" src="images/linkeasypayments.svg" alt="Betalkorts ikon.">
                             </div>
                             <div class="text easy">
                                 <h3 class="h3features">Easy Payments</h3>
@@ -86,8 +86,8 @@
                             </div>
                         </div>
                         <div class="features info2">
-                            <div class="icon2">
-                                <img src="images/Linkdatasecurity.svg" alt="data security">
+                            <div class="icon2 icon">
+                                <img src="images/Linkdatasecurity.svg" alt="Sköld ikon.">
                             </div>
                             <div class="text data">
                                 <h3 class="h3features">Data Security</h3>
@@ -95,8 +95,8 @@
                             </div>
                         </div>
                         <div class="features info3">
-                            <div class="icon3">
-                                <img src="images/Linkcoststat.svg" alt="cost statistics">
+                            <div class="icon3 icon">
+                                <img src="images/Linkcoststat.svg" alt="Staplar ikon.">
                             </div>
                             <div class="text cost">
                                 <h3 class="h3features">Cost Statistics</h3>
@@ -104,8 +104,8 @@
                             </div>
                         </div>
                         <div class="features info4">
-                            <div class="icon4">
-                                <img src="images/Linksupport.svg" alt="support 24/7">
+                            <div class="icon4 icon">
+                                <img src="images/Linksupport.svg" alt="Meddelande ikon.">
                                 </div>
                                 <div class="text support">
                                     <h3 class="h3features">Support 24/7</h3>
@@ -113,8 +113,8 @@
                                 </div>
                             </div>
                         <div class="features info5">
-                            <div class="icon5">
-                                <img src="images/Linkashback.svg" alt="regular cashback">
+                            <div class="icon5 icon">
+                                <img src="images/Linkashback.svg" alt="Plånbok ikon.">
                             </div>
                             <div class="text cashback">
                                 <h3 class="h3features">Regular Cashback</h3>
@@ -122,8 +122,8 @@
                             </div>
                         </div>
                         <div class="features info6">
-                            <div class="icon6">
-                                <img src="images/Linksmile.svg" alt="">
+                            <div class="icon6 icon">
+                                <img src="images/Linksmile.svg" alt="Glad smiles.">
                             </div>
                             <div class="text standards">
                                 <h3 class="h3features">Top Standards</h3>
@@ -138,21 +138,21 @@
             <div class="page page-3 flex3">
                 <h2 class="h2features">How Does It Work?</h2>
                 <div id="desktop3mobiler">
-                    <img src="images/3mobilerdesktop1.svg" alt="">
-                    <img src="images/3mobilerdesktop-ram.svg" alt="">
-                    <img src="images/3mobilerdesktop3.svg" alt="">
+                    <img src="images/3mobilerdesktop1.svg" alt="Bild på olika mobilskärmar.">
+                    <img src="images/3mobilerdesktop-ram.svg" alt="Bild på olika mobilskärmar.">
+                    <img src="images/3mobilerdesktop3.svg" alt="Bild på olika mobilskärmar.">
                 </div>
                 <div id="tablet3mobiler">
-                    <img id="tablet3mobiler-ID2" src="images/3mobiler1.svg" alt="">
+                    <img id="tablet3mobiler-ID2" src="images/3mobiler1.svg" alt="Bild på olika mobilskärmar.">
                     <span>
-                        <img id="tablet3mobiler-ID1" src="images/3mobiler.svg" alt="">
-                        <img id="tablet3mobiler-ID3" src="images/3mobiler2.svg" alt="">
+                        <img id="tablet3mobiler-ID1" src="images/3mobiler.svg" alt="Bild på olika mobilskärmar.">
+                        <img id="tablet3mobiler-ID3" src="images/3mobiler2.svg" alt="Bild på olika mobilskärmar.">
                     </span>
-                    <img id="tablet3mobiler-ID4" src="images/3mobiler3.svg" alt="">
+                    <img id="tablet3mobiler-ID4" src="images/3mobiler3.svg" alt="Bild på olika mobilskärmar.">
                 </div>
                 <div class="imagemobile">
-                    <img src="images/mobil.svg" alt="mobil ram" class="background">
-                    <img src="images/4 → 03-app-showcase-screens.png.svg" alt="mobil skärm" class="foreground">
+                    <img src="images/mobil.svg" alt="mobil ram." class="background">
+                    <img src="images/4 → 03-app-showcase-screens.png.svg" alt="Bild på olika mobilskärmar." class="foreground">
                 </div>
                 <div class="h3container">
                     <h3 class="h3features">
@@ -179,18 +179,18 @@
                 </div>
                 <button class="btn-primary btn-learn-more">Learn more <i class="fa-regular fa-arrow-right"></i></i></button>
             </div>
-            <div id="featuregraf"><img src="images/featuregraf.svg" alt="featuregraf"></div>
-            <div id="featurecontacts"><img src="images/featurecontacts.svg" alt="featurecontacts"></div>
+            <div id="featuregraf"><img src="images/featuregraf.svg" alt="Bild på graf."></div>
+            <div id="featurecontacts"><img src="images/featurecontacts.svg" alt="Bild på kontakter."></div>
             <div id="featurecontacts-text">
                 <h2 class="h2-featurespage">Receive payment from international bank details</h2>
                 <div class="flexrow">
                     <div>
-                        <img src="images/linkeasypayments.svg" alt="easypayments">
-                        <p class="margin-top">Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+                        <img src="images/linkeasypayments.svg" alt="Betalkorts ikon.">
+                        <p class="margin-top info-text1">Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
                     </div>
                     <div class="margin-left">
-                        <img src="images/Linkashback.svg" alt="cashback">
-                        <p class="margin-top">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
+                        <img src="images/Linkashback.svg" alt="Plånboks ikon.">
+                        <p class="margin-top info-text1">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
                     </div>
                 </div>
                 <button class="btn-primary btn-learn-more">Learn more <i class="fa-regular fa-arrow-right"></i></button>
@@ -203,11 +203,11 @@
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-1">
-                        <div class="quotes"><img src="images/quotes.svg" alt=""></div>
-                        <div><img src="images/rating4.svg" alt=""></div>
-                        <div>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</div>
+                        <div class="quotes"><img src="images/quotes.svg" alt="Citat tecken."></div>
+                        <div><img src="images/rating4.svg" alt="Fyra av fem stjärnor."></div>
+                        <div class="testimonial-text">Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</div>
                         <div class="flexrow gap">
-                            <img src="images/face1.svg" alt="">
+                            <img src="images/face1.svg" alt="Bild på ett litet ansikte.">
                             <div class="">
                                 <p class="t-name">Fannie Summers</p>
                                 <p class="t-title">Designer</p>
@@ -215,11 +215,11 @@
                         </div>
                     </div>
                     <div class="testimonial-1">
-                        <div class="quotes"><img src="images/quotes.svg" alt=""></div>
+                        <div class="quotes"><img src="images/quotes.svg" alt="Fem av fem stjärnor."></div>
                         <div><img src="images/rating5.svg" alt=""></div>
-                        <div>Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</div>
+                        <div class="testimonial-text">Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</div>
                         <div class="flexrow gap">
-                            <img src="images/face2.svg" alt="">
+                            <img src="images/face2.svg" alt="Bild på ett litet ansikte.">
                             <div>
                                 <p class="t-name">Albert Flores</p>
                                 <p class="t-title">Developer</p>
@@ -234,12 +234,12 @@
             <article class="textpage4">
                 Still have unanswered questions and need to get in touch?
             </article>
-            <div class="flex">
+            <div class="flex z-test">
                 <div>
                     <div id="faq1" class="faqborder faq">
                         <h2 class="h2faq">Is any of my personal information stored in the App?</h2>
-                        <button id="mobile-btn1" class="pilner"><img src="images/pilupp.svg" alt=""></button>
-                        <button id="tablet-btn1" class="pilner2"><img src="images/Iconpil ner.svg" alt=""></button>
+                        <button id="mobile-btn1" class="pilner"><img src="images/pilupp.svg" alt="Pil upp."></button>
+                        <button id="tablet-btn1" class="pilner2"><img src="images/Iconpil ner.svg" alt="Pil ner."></button>
                     </div>
                     <div id="faq2" class="faqborder faq">
                         <article class="faqtext">
@@ -255,14 +255,14 @@
                     <h2 class="h2faq">
                         What formats can I download my transaction history in?
                     </h2>
-                    <button class="pilner2"><img src="images/Iconpil ner.svg" alt=""></button>
+                    <button class="pilner2"><img src="images/Iconpil ner.svg" alt="Pil ner."></button>
                 </div>
                 <div id="faq4" class="faqborder faq">
                     <h2 class="h2faq">
                         Can I schedule future transfers?
                     </h2>
-                    <button id="tablet-btn2" class="pilner2"><img src="images/Iconpil ner.svg" alt=""></button>
-                    <button id="tablet-btn3" class="pilner"><img src="images/pilupp.svg" alt=""></button>
+                    <button id="tablet-btn2" class="pilner2"><img src="images/Iconpil ner.svg" alt="Pil ner."></button>
+                    <button id="tablet-btn3" class="pilner"><img src="images/pilupp.svg" alt="Pil upp."></button>
                     <div id="tablet-text1">
                         <p class="faqtext">Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
                     </div>
@@ -271,19 +271,19 @@
                     <h2 class="h2faq">
                         When can I use Banking App services?
                     </h2>
-                    <button class="pilner2"><img src="images/Iconpil ner.svg" alt=""></button>
+                    <button class="pilner2"><img src="images/Iconpil ner.svg" alt="Pil ner."></button>
                 </div>
                 <div id="faq6" class="faqborder faq">
                     <h2 class="h2faq">
                         Can I create my own password that is easy for me to remember?
                     </h2>
-                    <button class="pilner2"><img src="images/Iconpil ner.svg" alt=""></button>
+                    <button class="pilner2"><img src="images/Iconpil ner.svg" alt="Pil ner."></button>
                 </div>
                 <div id="faq7" class="faqborder faq">
                     <h2 class="h2faq">
                         What happens if I forget or lose my password?
                     </h2>
-                    <button class="pilner2"><img src="images/Iconpil ner.svg" alt=""></button>
+                    <button class="pilner2"><img src="images/Iconpil ner.svg" alt="Pil ner."></button>
                 </div>
             </div>
             <div class="contact">
@@ -292,19 +292,19 @@
                 </div>
                 <div id="contact-info">
                     <div id="contact-phone">
-                        <img src="images/phone.svg" alt="Telefon">
+                        <img src="images/phone.svg" alt="Telefon ikon.">
                         <article id="contact-info-text">Still have questions?</article>
                         <button class="btn-phone btn-contact">Contact us <i class="fa-regular fa-arrow-right" style="color: #6366f1;"></i></button>
                     </div>
                     <div id="contact-message">
-                        <img src="images/message.svg" alt="meddelande">
+                        <img src="images/message.svg" alt="meddelande ikon.">
                         <article id="contact-info-text">Don't like phone calls?</article>
                         <button class="btn-message btn-contact"><span>Contact us <i class="fa-regular fa-arrow-right" style="color: #22c55e;"></i></span></button>
                     </div>
                 </div>
                 <div class="newsletter">
                     <div class="flexrow klockan">
-                        <img src="images/notification-icon-1.svg" alt="">
+                        <img src="images/notification-icon-1.svg" alt="Notis klocka.">
                         <h2 class="h2-newsletter" id="mobile-newsletter">Subscribe to our newsletter </h2>
                         <h2 class="h2-newsletter" id="desktop-newsletter">Subscribe to our newsletter to stay informed about latest updates</span></h2>
                     </div>
@@ -312,7 +312,7 @@
                         <!-- <i class="fa-light fa-envelope"></i> -->
                         <label class="form-label" for="email"></label>
                         <input class="form-input" type="email" name="email" id="email" placeholder="Your email">
-                        <button class="btn-sub">Subscribe</button>
+                        <button class="btn-primary btn-sub">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -323,6 +323,6 @@
         <p>Credit MadrasThemes</p>
     </footer>
     
-    
+    <script src="darkmode.js"></script>
 </body>
 </html>
