@@ -379,6 +379,10 @@ ul {
   }
 }
 
+#darkmode-switch:focus + span {
+  outline: 2px solid var(--clr-black);
+}
+
 #darkmodetext {
   color: var(--clr-grey700);
   font-weight: 600;
