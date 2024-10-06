@@ -1,0 +1,217 @@
+.container, .container-fluid {
+    position: relative;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+.container-2, .container-fluid {
+    position: relative;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.container, .container-2 {
+    @include tablet {
+        max-width: 720px;
+    }
+
+    @include desktop {
+        max-width: 1320;
+    }
+}
+
+.page-1 {
+    padding-top: 1.63rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fit {
+    width: 100%;
+    padding: .5rem 0;
+}
+
+.page-2 {
+    text-align: center;
+}
+
+.featuresall {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 2rem .75rem .75rem .75rem;
+    
+    .textfeatures {
+      padding-bottom: 2rem;
+    }
+
+    .features {
+      display: flex;
+    }
+
+    .text {
+      padding-left: 1.5rem;
+    }
+
+    .h3features {
+      padding-bottom: .7rem;
+    }
+}
+
+.logos{
+  margin-top: 6rem;
+  display: none;
+}
+.logo {
+  height: 6.25rem;
+  
+  border-radius: .5rem;
+  padding: 0 auto;
+}
+
+.page-3 {
+  text-align: center;
+  width: 100%;
+}
+.h2features {
+  padding-top: 4rem;
+  padding-bottom: 1.1rem;
+}
+
+#desktop3mobiler {
+  display: none;
+}
+#tablet3mobiler {
+  display: none;
+}
+
+.imagemobile {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: .9rem 1.66rem 1rem 1rem; 
+}
+.background {
+    position: absolute;
+  }
+
+.h3container {
+  margin: 0 .75rem .75rem .75rem;
+  .h3features {
+    padding: 1rem 1rem 0 1rem;
+    margin: 0 .9rem;
+  }
+}
+#sida3-h3-1 {
+  display: none;
+}
+#sida3-h3-3 {
+  display: none;
+}
+#sida3-article-2 {
+  display: none;
+}
+.textpage3 {
+  margin: 0 .95rem 3.5rem .95rem;
+}
+
+.desktop {
+  display: none;
+}
+.testimonials {
+  display: none;
+}
+
+#desktop-newsletter {
+  display: none;
+}
+.klockan {
+  gap: 1rem;
+}
+
+.newsletter {
+  margin-top: 2.66rem;
+  margin: 2.66rem .75rem 0 .75rem;
+  padding: 3rem .8rem 2.11rem .8rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#tablet-text1 {
+  display: none;
+}
+
+.contact {
+  margin-top: 3.65rem;
+  width: 100%;
+}
+
+#contact-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  gap: 1.5rem;
+  display: none;
+}
+#contact-phone {
+  border: 1px solid var(--clr-grey200);
+  border-radius: .5rem;
+  padding: 1.5rem;
+}
+#contact-message {
+  border: 1px solid var(--clr-grey200);
+  border-radius: .5rem;
+  padding: 1.5rem;
+}
+#contact-info-text {
+  margin: 1.05rem 0 .7rem 0;
+}
+
+#faq2 {
+  margin: 0 .75rem;
+  border-radius: 0;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.87rem;
+}
+
+.faq {
+  display: flex;                                                                    
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 1rem 1.5rem;
+}
+
+.faqborder {
+  margin: 0 .75rem;
+}
+
+#faq1 {
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+#faq7 {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.page-4 {
+  text-align: center;
+}
+
+#br-faq {
+  display: none;
+}

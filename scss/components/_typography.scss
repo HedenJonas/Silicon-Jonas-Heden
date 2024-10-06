@@ -1,0 +1,75 @@
+p {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include heading;
+    margin-top: 0;
+    margin-bottom: .5em;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+
+.text1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: 0 1.04rem 1.55rem .75rem;
+    height: 7.2rem;  
+}
+
+.textpage2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.textpage3 {
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.6;
+color: var(--clr-grey700);
+}
+
+.footer {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+.h2faq {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.3rem;
+}
+
+.textpage4 {
+    margin: 0 1.3rem 3.4rem 1.3rem;
+  }

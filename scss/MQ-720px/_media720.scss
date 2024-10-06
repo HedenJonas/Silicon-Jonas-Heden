@@ -1,0 +1,238 @@
+@media (min-width: 768px) {
+    .page {
+      max-width: 720px;
+    }
+  
+    /* #region Sida 1 */
+  
+    .page-1 {
+      .image1 {
+        display: grid;
+      }
+      
+      .h1{
+        padding: 0 20%;
+      }
+      .flex1-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        place-items: center;
+        margin-top: auto;
+        width: 18.75rem;
+        margin-right: -2rem;
+      }
+      #item1-2-1 {
+        text-align: left;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        margin: 0;
+      }
+      
+    }
+    .flex1-1 {
+      width: 720px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    /* #endregion */
+  
+    /* #region topbar */
+  
+    .nav {
+      min-width: 720px;
+      max-width: 100%;
+    }
+    .navbar {
+      width: 720px;
+      margin: 0 auto;
+    }
+    #darkmodetext {
+      display: block;
+      color: var(--clr-grey700);
+    }
+    .drop-down {
+      margin-left: 2.5rem;
+    }
+    .featuresnav {
+      display: none;
+      margin-bottom: .2rem;
+    }
+    /* #endregion */
+    
+    /* #region logo raden */
+  
+    .logos {
+      width: 720px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    #logo5 {
+      display: none;
+    }
+    #logo6 {
+      display: none;
+    }
+    /* #endregion */
+  
+    /* #region Sida 2 */
+  
+    .page-2 {
+      .featuresall {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+  }
+  /* #endregion */
+  
+    /* #region sida3 */
+    .BG2 #desktop3mobiler {
+      display: none;
+    }
+    .imagemobile {
+        display: none;
+    }
+  
+    .BG2 #tablet3mobiler {
+      display: block;
+    }
+    
+    .BG2 #tablet3mobiler-ID1 {
+      position: absolute;
+    }
+  
+    .BG2 .h3container {
+      width: 26rem;
+      margin: 0;
+      .h3features {
+        padding: 1rem 0 0 0;
+        font-size: 1.42rem;
+        font-weight: 800;
+        line-height: 1.98rem;
+        margin: 0;
+      }
+    }
+    .BG2 .textpage3 {
+      width: 28rem;
+      margin: 1rem .95rem 3.5rem .95rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--clr-grey700);
+    }
+  
+    .BG2 #sida3-h3-1 {
+      display: inline-block;
+    }
+    /* #endregion */
+    
+    /* #region Sida 4 */
+    .page-4 {
+      width: 100%;
+    }
+    .page-4 #br-faq {
+      display: block;
+    }
+    .page-4 .h2features {
+      width: 26rem;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 2.6rem;
+    }
+    .page-4 .textpage4 {
+      width: 26rem;
+    }
+    .page-4 .faqborder {
+      border: 0;
+      border-radius: .5rem;
+      box-shadow: var(--clr-shadow-faq);
+    }
+    .flex {
+      width: 100%;
+      gap: 1rem;
+    }
+    .page-4 {
+      #mobile-btn1 {
+        display: none;
+      }
+      #tablet-btn1 {
+        display: block;
+      }
+      #tablet-btn2 {
+        display: none;
+      }
+      #tablet-btn3 {
+        display: block;
+      }
+      
+      .pilner {       
+        box-shadow: var(--clr-shadow-pilner);
+        border: 1px solid var(--clr-Primary);
+      }
+      .pilner:hover {
+        background-color: var(--clr-grey200);
+        box-shadow: none;
+        border: 0;
+      }
+      .pilner:active {
+        background-color: var(--clr-grey200);
+        box-shadow: none;
+        border: 0;
+      }
+      .pilner2:hover {
+        background-color: var(--clr-Primary);
+        box-shadow: none;
+      }
+      .pilner2:active {
+        background-color: var(--clr-Primary);
+        box-shadow: none;
+      }
+    }
+    .page-4 #faq2 {
+      display: none;
+    }
+    .page-4 #faq4 {
+      display: grid;
+      grid-template-columns: 1fr auto;
+    }
+    .page-4 #tablet-text1 {
+      display: block;
+    }
+    .page-4 #contact-btn {
+      display: none;
+    }
+    .page-4 #contact-info {
+      display: grid;
+    }
+  
+    .page-4 .newsletter {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      padding: 4rem .8rem 4rem .8rem;
+    }
+  
+    .page-4 .sign-up-form {
+      margin: auto 0;
+    }
+  /* #endregion */
+  
+  /* #region footer */
+    .footer {
+      display: flex;
+      flex-direction: row;
+      gap: .1rem;
+    }
+    /* #endregion */
+  
+  }

@@ -1,0 +1,43 @@
+.featureslink {
+    color: var(--clr-grey800);
+  }
+
+.featureslink:hover {
+    color: var(--clr-Primary);
+    text-decoration: underline;
+}
+
+.nav {
+    background-color: var(--clr-grey100);
+}
+
+.silicon {
+    color: var(--clr-grey900);
+}
+
+.form-input {
+    border: 0.0625rem solid var(--clr-grey400);
+
+    &:focus {
+      outline: 1px solid var(--clr-Primary);
+    }
+}
+
+#contact-phone {
+    border: 1px solid var(--clr-grey200);
+}
+#contact-message {
+    border: 1px solid var(--clr-grey200);
+}
+
+.faqborder {
+    border: 1px solid var(--clr-grey300);
+}
+
+#tablet-btn1 {
+    display: none;
+}
+
+#tablet-btn3 {
+    display: none;
+}

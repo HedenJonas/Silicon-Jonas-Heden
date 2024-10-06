@@ -1,0 +1,111 @@
+:root {
+    --clr-white: #ffffff;
+    --clr-grey100: #F3F6FF;
+    --clr-grey200: #EFF2FC;
+    --clr-grey300: #E2E5F1;
+    --clr-grey400: #D4D7E5;
+    --clr-grey500: #B4B7C9;
+    --clr-grey600: #9397AD;
+    --clr-grey700: #565973;
+    --clr-grey800: #33354D;
+    --clr-grey900: #0B0F19;
+    --clr-black: #000000;
+    --clr-primary: #6366f1;
+    --clr-gradiant: linear-gradient(90deg, #6366F1 0%, #8B5CF6 50%, #D946EF 100%);
+    --clr-radial-gradiant: radial-gradient(118% 116.18% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+    --clr-error: #EF4444;
+    --clr-success: #22c55e;
+    --clr-warning: #FFBA08;
+    --clr-info: #4C82F7;
+
+    --clr-white-dark: #ffffff;
+    --clr-grey100-dark: #F3F6FF;
+    --clr-grey200-dark: #EFF2FC;
+    --clr-grey300-dark: #E2E5F1;
+    --clr-grey400-dark: #D4D7E5;
+    --clr-grey500-dark: #B4B7C9;
+    --clr-grey600-dark: #9397AD;
+    --clr-grey700-dark: #565973;
+    --clr-grey800-dark: #33354D;
+    --clr-grey900-dark: #0B0F19;
+    --clr-black-dark: #000000;
+
+    --clr-grey300-dark-15: hsla(228, 35%, 92%, 0.15);
+    --clr-grey800-dark-22: hsla(235, 20%, 25%, 0.22);
+
+    --clr-icons: rgba(99, 102, 241, 0.08);
+    --clr-bg-testimonials: rgba(255, 255, 255, 0.04);
+
+    --clr-shadow-faq: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    --clr-shadow-pilner: 0px 8px 18px -8px rgba(99, 102, 241, 0.90);
+    --clr-shadow-testimonial: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    --clr-transparant: rgba(255, 255, 255, 0);
+}
+
+:root.dark {
+    color-scheme: dark;
+    --clr-white: black;
+    --clr-grey900: #F3F6FF;
+    --clr-grey800: #EFF2FC;
+    --clr-grey700: #E2E5F1;
+    --clr-grey600: #D4D7E5;
+    --clr-grey500: #B4B7C9;
+    --clr-grey400: #9397AD;
+    --clr-grey300: #565973;
+    --clr-grey200: #33354D;
+    --clr-grey100: #0B0F19; 
+    --clr-black: WHITE;
+
+    body {
+        background-color: var(--clr-grey100);
+      }
+      .textpage2 {
+        opacity: .5;
+      }
+      .page-1 {
+        .pilner {
+          border: 1px solid var(--clr-white);
+          background-color: var(--clr-grey300);
+        }
+      }
+      .page-3 {
+        .textpage3 {
+          opacity: .7;
+        }
+      }
+      .desktop {
+        .list1 {
+          opacity: .7;
+        }
+        .info-text1 {
+          opacity: .7;
+        }
+      }
+      .BG2 {
+        background-color: var(--clr-grey800-dark-22);
+        .testimonial-text {
+          opacity: .7;
+        }
+        .testimonial-1 {
+          background-color: var(--clr-bg-testimonials);
+        }
+      }
+      .page-4 {
+        .faq {
+          background-color: var(--clr-grey800-dark-22);
+        }
+        .newsletter {
+          background-color: var(--clr-grey800-dark-22);
+        }
+        .form-input {
+          background-color: var(--clr-grey800-dark-22);
+        }
+      }
+      .footer {
+        opacity: .5;
+      }
+}
+
+.icons {
+    background: var(--clr-icons);
+}

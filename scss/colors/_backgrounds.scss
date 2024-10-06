@@ -1,0 +1,11 @@
+.BG {
+    background: var(--clr-radial-gradiant);
+    width: 100%;
+  }
+
+  .BG2 {
+    background-color: var(--clr-grey100);
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }

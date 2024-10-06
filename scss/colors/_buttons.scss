@@ -1,0 +1,140 @@
+// .btn-dark {
+//     @include button-colors(--clr-primary, --clr-grey100-dark, --clr-grey400-dark, --clr-grey100-dark);
+// }
+// .btn-primary {
+//     @include button-colors(--clr-black-dark, --clr-grey100-dark, --clr-grey400-dark, --clr-grey100-dark, --clr-grey100-dark, --clr-grey100-dark);
+// }
+// .btn-secondary {
+//     @include button-colors(--clr-transparant, --clr-primary, --clr-transparant, --clr-grey600-dark);
+// }
+// .btn-accent {
+//     @include button-colors(--clr-transparant, --clr-success, --clr-grey400-dark, --clr-success, --clr-success, --clr-success);
+// }
+// .btn-gray {
+//     @include button-colors(--clr-transparant, --clr-primary, --clr-grey400-dark, --clr-primary, --clr-primary, --clr-primary);
+// }
+// .btn-menu {
+//     @include button-colors(--clr-grey700, --clr-grey100, --clr-primary, --clr-grey900);
+// }
+
+.btn-signin {
+    background-color: var(--clr-primary);
+    color: var(--clr-grey100);
+}
+
+.btn-signin i {
+    color: var(--clr-white-dark);
+}
+
+.sign-in-up {
+    color: var(--clr-white-dark);
+}
+
+.btn-signin:hover {
+    background-color: var(--clr-grey500);
+    color: var(--clr-primary);
+  }
+  .btn-signin:active {
+    background-color: var(--clr-grey500);
+    color: var(--clr-primary);
+  }
+
+#auth-signin {
+    color: var(--clr-white-dark);
+  }
+
+.app {
+    border: 1px solid var(--clr-black);
+    background-color: var(--clr-black-dark);
+}
+
+.pilner {
+    border: 1px solid var(--clr-white);
+    background-color: var(--clr-white);
+  }
+  .pilner:hover {
+    background-color: var(--clr-primary);
+  }
+  .pilner:active {
+    background-color: var(--clr-primary);
+  }
+
+  .btn-sub {
+    background: var(--clr-primary);
+    color: white;
+  }
+  .btn-sub:hover {
+    background-color: var(--clr-grey700);
+    color: var(--clr-primary);
+  }
+  .btn-sub:active {
+    background-color: var(--clr-grey500);
+    color: var(--clr-primary);
+}
+
+.btn-phone {
+    color: var(--clr-primary);
+}
+.btn-phone:hover {
+    border: 1px solid var(--clr-primary);
+}
+.btn-phone:active {
+    background-color: var(--clr-grey700);
+    border: 1px solid transparent;
+}
+.btn-message {
+    color: var(--clr-success);
+}
+.btn-message:hover {
+    border: 1px solid var(--clr-success);
+}
+.btn-message:active {
+    background-color: var(--clr-grey700);
+    border: 1px solid transparent;
+}
+
+.btn-contact {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.pilner {
+    border: 1px solid var(--clr-white);
+    background-color: var(--clr-Primary);
+    box-shadow: 0px -8px 18px -8px var(--clr-Primary);
+  }
+  .pilner2 {
+    border: 1px solid var(--clr-white);
+    background-color: var(--clr-grey100);
+  }
+.pilner:hover {
+    background-color: var(--clr-grey200);
+    box-shadow: none;
+}
+.pilner:active {
+    background-color: var(--clr-grey200);
+    box-shadow: none;
+}
+.pilner2:hover {
+    background-color: var(--clr-Primary);
+    box-shadow: none;
+}
+.pilner2:active {
+    background-color: var(--clr-Primary);
+    box-shadow: none;
+}
+
+.btn-primary {
+    border: 1px solid var(--clr-Primary);
+    background: var(--clr-Primary);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+      background-color: var(--clr-grey700);
+      color: var(--clr-Primary);
+  }
+  .btn-primary:active {
+    background-color: var(--clr-grey500);
+    color: var(--clr-Primary);
+  }
